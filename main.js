@@ -11,8 +11,22 @@ const reset= document.getElementById('reset')
 
 let jugador=false;
 
+reset.addEventListener ('click', (e) => {
+   a1.innerHTML = '';
+   a2.innerHTML = '';
+   a3.innerHTML = '';
+   a4.innerHTML = '';
+   a5.innerHTML = '';
+   a6.innerHTML = '';
+   a7.innerHTML = '';
+   a8.innerHTML = '';
+   a9.innerHTML = '';
+})
+
 a1.addEventListener("click",(e)=>{
    e.preventDefault();
+   if (a1.innerText!='X'&&a1.innerText!='O'){
+
    
    if(jugador==false){
    e.target.dataset.value='X';
@@ -26,10 +40,15 @@ a1.addEventListener("click",(e)=>{
    a1.innerText='O';
    }
    combinacionesGanadoras();
+
+}
 })
 
 a2.addEventListener("click",(e)=>{
     e.preventDefault();
+    if (a2.innerText!='X'&&a2.innerText!='O'){
+
+    
     
     if(jugador==false){
     e.target.dataset.value='X';
@@ -43,10 +62,12 @@ a2.addEventListener("click",(e)=>{
     a2.innerText='O';
     }
     combinacionesGanadoras();
+   }
  })
 
  a3.addEventListener("click",(e)=>{
     e.preventDefault();
+    if (a3.innerText!='X'&&a3.innerText!='O'){
     
     if(jugador==false){
     e.target.dataset.value='X';
@@ -60,10 +81,12 @@ a2.addEventListener("click",(e)=>{
     a3.innerText='O';
     }
     combinacionesGanadoras();
+   }
  })
 
  a4.addEventListener("click",(e)=>{
     e.preventDefault();
+    if (a4.innerText!='X'&&a4.innerText!='O'){
     
     if(jugador==false){
     e.target.dataset.value='X';
@@ -77,10 +100,12 @@ a2.addEventListener("click",(e)=>{
     a4.innerText='O';
     }
     combinacionesGanadoras();
+   }
  })
 
  a5.addEventListener("click",(e)=>{
     e.preventDefault();
+    if (a5.innerText!='X'&&a5.innerText!='O'){
     
     if(jugador==false){
     e.target.dataset.value='X';
@@ -94,10 +119,12 @@ a2.addEventListener("click",(e)=>{
     a5.innerText='O';
     }
     combinacionesGanadoras();
+   }
  })
 
  a6.addEventListener("click",(e)=>{
     e.preventDefault();
+    if (a6.innerText!='X'&&a6.innerText!='O'){
     
     if(jugador==false){
     e.target.dataset.value='X';
@@ -111,10 +138,12 @@ a2.addEventListener("click",(e)=>{
     a6.innerText='O';
     }
     combinacionesGanadoras();
+   }
  })
 
  a7.addEventListener("click",(e)=>{
     e.preventDefault();
+    if (a7.innerText!='X'&&a7.innerText!='O'){
     
     if(jugador==false){
     e.target.dataset.value='X';
@@ -128,10 +157,12 @@ a2.addEventListener("click",(e)=>{
     a7.innerText='O';
     }
     combinacionesGanadoras();
+   }
  })
 
  a8.addEventListener("click",(e)=>{
     e.preventDefault();
+    if (a8.innerText!='X'&&a8.innerText!='O'){
     
     if(jugador==false){
     e.target.dataset.value='X';
@@ -145,10 +176,12 @@ a2.addEventListener("click",(e)=>{
     a8.innerText='O';
     }
     combinacionesGanadoras();
+   }
  })
 
  a9.addEventListener("click",(e)=>{
     e.preventDefault();
+    if (a9.innerText!='X'&&a9.innerText!='O'){
     
     if(jugador==false){
     e.target.dataset.value='X';
@@ -162,6 +195,7 @@ a2.addEventListener("click",(e)=>{
     a9.innerText='O';
     }
     combinacionesGanadoras();
+   }
  })
 
 
